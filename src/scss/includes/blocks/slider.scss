@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    background-color:grey;
+    background-color:rgb(74, 74, 117);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -27,7 +27,7 @@
     position: absolute;
     visibility: hidden;
   }
-  .card {
+  .item-card {
     margin: 20px;
     width: 300px;
     height: 120px;
@@ -42,7 +42,7 @@
     transform: translateZ(100px);
   } 
 
-  .card div {
+  .item-card div {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -67,5 +67,7 @@
   .yellow .front, .yellow .back { box-shadow: 0 0 5px yellow; }
   .black .front, .black .back { box-shadow: 0 0 5px white; }
   
-  /* ACTIONS */
-  input:checked + .card {	transform: rotateX(180deg); }
+
+  .do-flip{
+    transform: rotateX(180deg);
+  }
