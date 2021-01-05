@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+
+	*::before, *::after {
+		box-sizing: border-box;
+	}
+
+	&:not(iframe) {
+		transition: 0.25s ease;
+		transition-property: background, border, color, left, margin, padding, right, opacity;
+	}
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+input[type="submit"]:focus {
+	outline: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img,
+video,
+audio {
+	max-width: 100%;
+	height: auto;
+}
+
+label,
+button,
+input,
+select {
+	cursor: pointer;
+}
+
+label[for] {
+	cursor: pointer;
+}
+
+abbr[title],
+acronym[title],
+dfn {
+	cursor: help;
+}
+
+textarea {
+	resize: vertical;
+}
+
+[disabled] {
+	cursor: default;
+}
+
+[aria-disabled="true"] {
+	cursor: default;
+	pointer-events: none;
+}
+
+.no-js button[type="button"] {
+	display: none;
+}
+
+sub,
+sup {
+	line-height: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	
+	&:not([href]){
+		cursor: initial;
+	}
+}
+
+button, input, label, select {
+	cursor: auto;
+}

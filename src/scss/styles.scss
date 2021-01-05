@@ -1,0 +1,19 @@
+// General
+@import 'includes/base/vars';
+@import 'includes/base/mixins';
+//@import 'includes/base/fonts';
+@import 'includes/base/utils';
+@import 'includes/base/global';
+
+// Blocks
+//@import 'includes/blocks/*';
+@import 'includes/blocks/slider.scss';
+@import 'includes/blocks/test.scss';
+
+// Vendor
+//@import 'includes/vendor/**/*';
+
+
+// Core Templates
+@import 'footer.scss';
+@import 'header.scss';
